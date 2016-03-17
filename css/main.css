@@ -1,0 +1,228 @@
+/*  MY PROFILE  */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #3978E3;
+  position: fixed;
+  z-index: 1;
+  text-align: right;
+  top: 0; }
+  nav ul {
+    list-style-type: none;
+    position: relative;
+    right: 40px; }
+    nav ul li {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 30px; }
+      nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 2px;
+        border-radius: 4hepx;
+        padding: 8px; }
+        nav ul li a:hover {
+          color: white;
+          border-radius: 5px;
+          background-color: #2f65bc; }
+
+/* ##################### */
+/*  HOME  */
+.container {
+  width: 100%;
+  height: 650px;
+  background-color: #6BD7C5; }
+  .container #name {
+    position: relative;
+    top: 12%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 2em; }
+  .container #img {
+    height: 290px;
+    width: 420px;
+    border: 5px solid white;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 10%; }
+    .container #img img {
+      width: 100%;
+      height: 100%; }
+  .container #title {
+    text-align: center;
+    position: relative;
+    top: 15%; }
+    .container #title h2 {
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 1.8em; }
+
+/* PROJECT */
+#project-container {
+  width: 100%;
+  height: 450px; }
+  #project-container h1 {
+    margin: 0;
+    position: relative;
+    top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3978E3; }
+  #project-container .project-wrapper {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    top: 30px; }
+    #project-container .project-wrapper #truckly {
+      background: url("../images/truckly_project.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+    #project-container .project-wrapper #newgo {
+      background: url("../images/newgo_project.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+    #project-container .project-wrapper #jun {
+      background: url("../images/jun.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+    #project-container .project-wrapper .projects {
+      width: 30%;
+      height: 80%;
+      display: inline-block;
+      float: left;
+      margin-left: 2%;
+      margin-top: 3%; }
+      #project-container .project-wrapper .projects a {
+        text-decoration: none; }
+        #project-container .project-wrapper .projects a .overlay {
+          height: 100%;
+          width: 100%;
+          background-color: #6BD7C5;
+          opacity: 0; }
+          #project-container .project-wrapper .projects a .overlay span {
+            width: 80%;
+            height: 30%;
+            position: relative;
+            top: 100px; }
+            #project-container .project-wrapper .projects a .overlay span p {
+              color: #ffffff;
+              margin-top: 0;
+              text-align: center; }
+
+/* ABOUT */
+#about-container {
+  width: 100%;
+  height: 450px;
+  background-color: #6BD7C5; }
+  #about-container h1 {
+    margin-top: 0;
+    position: relative;
+    top: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center; }
+  #about-container #section-wrapper {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    top: 30px; }
+    #about-container #section-wrapper #a-left {
+      height: 100%;
+      width: 45%;
+      display: inline-block;
+      margin-right: 30px;
+      float: left;
+      position: relative;
+      left: 10%; }
+      #about-container #section-wrapper #a-left #top-lang {
+        width: 100%;
+        height: 50%; }
+        #about-container #section-wrapper #a-left #top-lang .logo-gallery {
+          width: 49%;
+          height: 100%;
+          float: left; }
+        #about-container #section-wrapper #a-left #top-lang .logo-gallery:last-child {
+          width: 35%; }
+      #about-container #section-wrapper #a-left #bottom-lang {
+        width: 50%;
+        height: 50%;
+        border: 1px solid #ffffff;
+        margin-left: 15%; }
+    #about-container #section-wrapper #a-right {
+      height: 100%;
+      width: 30%;
+      display: inline-block;
+      margin-left: 30px;
+      float: left;
+      position: relative;
+      left: 10%; }
+      #about-container #section-wrapper #a-right p {
+        color: #ffffff;
+        font-size: 1.2em; }
+
+.logo {
+  width: 100%;
+  height: 100%; }
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #244c8c;
+  color: #ffffff; }
+  footer .footer-box {
+    text-align: center;
+    height: 70%;
+    width: 33%;
+    display: inline-block;
+    float: left; }
+    footer .footer-box .f-headline {
+      width: 100%;
+      height: 20%; }
+      footer .footer-box .f-headline h2 {
+        text-transform: uppercase;
+        font-size: 1.6em; }
+    footer .footer-box .caption {
+      width: 100%;
+      height: 80%; }
+      footer .footer-box .caption .social-link {
+        color: #ffffff; }
+        footer .footer-box .caption .social-link:hover {
+          color: #6BD7C5; }
+        footer .footer-box .caption .social-link .fa {
+          display: inline-block;
+          position: relative;
+          top: 5px; }
+        footer .footer-box .caption .social-link .fa-github, footer .footer-box .caption .social-link .fa-instagram {
+          margin-right: 29px; }
+      footer .footer-box .caption #hidden-email {
+        display: none; }
+  footer .clear {
+    clear: both; }
+  footer #copyright {
+    width: 100%;
+    height: 30%;
+    background-color: #1a3866;
+    text-align: center;
+    position: relative;
+    bottom: 0; }
+    footer #copyright span {
+      position: relative;
+      top: 25px; }
+      footer #copyright span p {
+        margin: 0;
+        font-size: 1.2em; }
+
+/*# sourceMappingURL=main.css.map */
