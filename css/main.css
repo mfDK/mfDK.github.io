@@ -8,27 +8,20 @@ body {
 nav {
   width: 100%;
   height: 70px;
-  background-color: #3978E3;
-  position: fixed;
-  z-index: 1;
   text-align: right;
-  top: 0; }
+  margin-top: 0;
+  overflow: hidden; }
   nav ul {
-    list-style-type: none;
-    position: relative;
-    right: 40px; }
+    margin-top: 25px; }
     nav ul li {
       display: inline-block;
-      margin-top: 10px;
       margin-right: 30px; }
       nav ul li a {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1em;
         font-weight: 600;
-        color: #ffffff;
         letter-spacing: 2px;
-        border-radius: 4hepx;
         padding: 8px; }
         nav ul li a:hover {
           color: white;
@@ -211,18 +204,7 @@ footer {
         display: none; }
   footer .clear {
     clear: both; }
-  footer #copyright {
-    width: 100%;
-    height: 30%;
-    background-color: #1a3866;
-    text-align: center;
-    position: relative;
-    bottom: 0; }
-    footer #copyright span {
-      position: relative;
-      top: 25px; }
-      footer #copyright span p {
-        margin: 0;
-        font-size: 1.2em; }
+
+/* MEDIA QUERIES */
 
 /*# sourceMappingURL=main.css.map */
