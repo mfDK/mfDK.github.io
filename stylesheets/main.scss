@@ -1,5 +1,4 @@
 $blue: #6BD7C5;
-$nav: #3978E3;
 $footer: #244c8c;
 $white: #ffffff;
 $copy: #1a3866;
@@ -30,32 +29,31 @@ nav {
 				font-size: 1em;
 				font-weight: 600;
 				letter-spacing: 2px;
-				padding: 8px;
+				padding-bottom: 4px;
 				&:hover {
-					color: white;
-					border-radius: 5px;
-					background-color: #2f65bc;
+					border-bottom: 2px solid black;
+					cursor: default;
 				}
 			}
 		}
 	}
 }
 
-
-/* ##################### */
 /*  HOME  */
 
 .container {
 	width: 100%;
-	height: 650px;
+	height: 70vh;
 	background-color: #6BD7C5;
+	padding-top: 80px;
 	#name {
-		position: relative;
-		top: 12%;
 		text-align: center;
 		text-transform: uppercase;
 		color: #ffffff;
 		font-size: 2em;
+		h1 {
+			margin: 0;
+		}
 	}
 	#img {
 		height: 290px;
@@ -63,9 +61,7 @@ nav {
 		border: 5px solid white;
 		border-radius: 100%;
 		overflow: hidden;
-		margin: 0 auto;
-		position: relative;
-		top: 10%;
+		margin: 50px auto;
 		img {
 			width: 100%;
 			height: 100%;
@@ -73,12 +69,13 @@ nav {
 	}
 	#title {
 		text-align: center;
-		position: relative;
-		top: 15%;
 		h2 {
 			text-transform: uppercase;
 			color: #ffffff;
 			font-size: 1.8em;
+		}
+		p {
+			color: #ffffff;
 		}
 	}
 }
@@ -86,125 +83,23 @@ nav {
 /* PROJECT */
 
 #project-container {
-	width: 100%;
-	height: 450px;
-	h1 {
-		margin: 0;
-		position: relative;
-		top: 30px;
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 50px;
+	#project-header {
+		font-size: 2em;
 		text-transform: uppercase;
-		text-align: center;
-		color: $nav;
+		font-weight: 800;
 	}
-	.project-wrapper {
-		height: 350px;
-		width: 100%;
-		position: relative;
-		top: 30px;
-		#truckly {
-			background: url("../images/truckly_project.png");
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
-		#newgo {
-			background: url("../images/newgo_project.png");
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
-		#jun {
-			background: url("../images/jun.png");
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
-		.projects {
-			width: 30%;
-			height: 80%;
-			display: inline-block;
-			float: left;
-			margin-left: 2%;
-			margin-top: 3%;
-			a {
-				text-decoration: none;
-				.overlay {
-					height: 100%;
-					width: 100%;
-					background-color: $blue;
-					opacity: 0;
-					span {
-						width: 80%;
-						height: 30%;
-						position: relative;
-						top: 100px;
-						p {
-							color: #ffffff;
-							margin-top: 0;
-							text-align: center;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/* ABOUT */
-
-#about-container {
-	width: 100%;
-	height: 450px;
-	background-color: $blue;
-	h1 {
-		margin-top: 0;
-		position: relative;
-		top: 30px;
-		text-transform: uppercase;
-		color: #ffffff;
-		text-align: center;
-	}
-	#section-wrapper {
-		height: 70%;
-		width: 100%;
-		position: relative;
-		top: 30px;
-		#a-left {
+	.projects {
+		height: 300px;
+		width: 300px;
+		display: inline-block;
+		.project-thumb {
 			height: 100%;
-			width: 45%;
-			display: inline-block;
-			margin-right: 30px;
-			float: left;
-			position: relative;
-			left: 10%;
-			#top-lang {
-				width: 100%;
-				height: 50%;
-				.logo-gallery {
-					width: 49%;
-					height: 100%;
-					float: left;
-				}
-				.logo-gallery:last-child {
-					width: 35%;
-				}
-			}
-			#bottom-lang {
-				width: 50%;
-				height: 50%;
-				border: 1px solid $white;
-				margin-left: 15%;
-			}
-		}
-		#a-right {
-			height: 100%;
-			width: 30%;
-			display: inline-block;
-			margin-left: 30px;
-			float: left;
-			position: relative;
-			left: 10%;
-			p {
-				color: $white;
-				font-size: 1.2em;
-			}
+			width: 100%;
 		}
 	}
 }
@@ -213,6 +108,7 @@ nav {
 	width: 100%;
 	height: 100%;
 }
+
 /* FOOTER */
 
 footer {
@@ -262,3 +158,32 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 699px) and (min-width: 374px) {
+    nav {
+		text-align: center;
+		ul {
+			width: 100%;
+			padding: 0 15px;
+		}
+	}
+	.container {
+		padding-top: 20px;
+		#img {
+			width: 80%;
+			height: 40%;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		#title h2 {
+			margin-bottom: 0;
+		}
+	}
+	#project-container {
+		.projects {
+		}
+	}
+}
+
+// @media screen and (min-width: 700px) and {max-width: 1024px} {
+//
+// }

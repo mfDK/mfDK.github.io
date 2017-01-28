@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Danny Kim's Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css">
@@ -11,7 +12,6 @@
 	<nav id="nav">
 		<ul>
 			<li><a id="project-link">projects</a></li>
-			<li><a id="about-link">about</a></li>
 			<li><a id="contact-link">contact</a></li>
 		</ul>
 	</nav>
@@ -24,58 +24,23 @@
 		</div>
 		<div id="title">
 			<h2>web developer</h2>
+			<p>JavaScript &#8226 jQuery &#8226 HTML &#8226 SCSS/CSS</p>
 		</div>
 	</div>
+
 	<div id="project-container">
-		<h1>projects</h1>
-		<div class="project-wrapper">
-			<div class="projects" id="newgo">
-				<a href="#" class="desc">
-					<div class="overlay">
-						<span>
-							<p class="overlay-caption">Newgo is a goal setting application built with Ruby on Rails and uses the OmniAuth gem for Facebook logins and user authentication. Also uses the Facebook Graph API to post status updates when a goal is a failure or accomplished.</p>
-						</span>
-					</div>
-				</a>
-			</div>
-			<div class="projects" id="truckly">
-				<a href="#" class="desc">
-					<div class="overlay">
-						<span>
-							<p>Truckly is a food truck application built with Ruby on Rails and uses the Google Maps JavaScript API for location tracking.</p>
-						</span>
-					</div>
-				</a>
-			</div>
-			<div class="projects" id="jun">
-				<a href="#" class="desc">
-					<div class="overlay">
-						<span>
-							<p>This is a website I built for a small construction business that needed a website to show customers their work. The website is built with jQuery, JavaScript, HTML5 &#38; CSS3</p>
-						</span>
-					</div>
-				</a>
-			</div>
+		<p id="project-header">projects</p>
+		<div class="projects" id="react">
+			<img class="project-thumb" src="images/truckly_project.png">
+		</div>
+		<div class="projects" id="sunnys">
+			<img class="project-thumb" src="images/newgo_project.png">
+		</div>
+		<div class="projects" id="reddit">
+			<img class="project-thumb" src="images/jun.png">
 		</div>
 	</div>
-	<div id="about-container">
-		<h1>about</h1>
-		<div id="section-wrapper">
-			<section id="a-left">
-				<div id="top-lang">
-					<div class="logo-gallery">
-						<img class="logo" src="images/js.png">
-					</div>
-				</div>
-				<div id="bottom-lang">
-					<img class="logo" src="images/htmlcss.jpg">
-				</div>
-			</section>
-			<section id="a-right">
-				<p>I love new technology and have a special interest in new start ups looking to break the status quo. In my spare time, I enjoy trying the endless food options that New York City has to offer. My favorite things to do include cooking, running, paddle boarding, Reddit, and watching Netflix.</p>
-			</section>
-		</div>
-	</div>
+
 	<footer id="footer-anchor">
 		<div class="footer-box">
 			<div class="f-headline">
