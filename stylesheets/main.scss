@@ -1,5 +1,4 @@
 $blue: #6BD7C5;
-$footer: #244c8c;
 $white: #ffffff;
 $copy: #1a3866;
 
@@ -28,10 +27,11 @@ nav {
 				text-transform: uppercase;
 				font-size: 1em;
 				font-weight: 600;
+				color: $white;
 				letter-spacing: 2px;
 				padding-bottom: 4px;
 				&:hover {
-					border-bottom: 2px solid black;
+					border-bottom: 2px solid $white;
 					cursor: default;
 				}
 			}
@@ -44,38 +44,19 @@ nav {
 .container {
 	width: 100%;
 	height: 70vh;
-	background-color: #6BD7C5;
-	padding-top: 80px;
-	#name {
-		text-align: center;
-		text-transform: uppercase;
-		color: #ffffff;
-		font-size: 2em;
-		h1 {
-			margin: 0;
-		}
-	}
-	#img {
-		height: 290px;
-		width: 420px;
-		border: 5px solid white;
-		border-radius: 100%;
-		overflow: hidden;
-		margin: 50px auto;
-		img {
-			width: 100%;
-			height: 100%;
-		}
-	}
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	#title {
 		text-align: center;
-		h2 {
+		color: $white;
+		h1 {
 			text-transform: uppercase;
-			color: #ffffff;
-			font-size: 1.8em;
+			font-size: 3.8em;
 		}
-		p {
-			color: #ffffff;
+		h2 {
+			font-size: 1.8em;
+			text-transform: uppercase;
 		}
 	}
 }
@@ -114,46 +95,17 @@ nav {
 footer {
 	width: 100%;
 	height: 250px;
-	background-color: $footer;
+	background-color: #34373d;
 	color: $white;
-	.footer-box {
+	#social {
+		position: relative;
+		top: 45%;
 		text-align: center;
-		height: 70%;
-		width: 33%;
-		display: inline-block;
-		float: left;
-		.f-headline {
-			width: 100%;
-			height: 20%;
-			h2 {
-				text-transform: uppercase;
-				font-size: 1.6em;
-			}
+		a {
+			color: $white;
+			margin-right: 15px;
+			font-size: 30px;
 		}
-		.caption {
-			width: 100%;
-			height: 80%;
-			.social-link {
-				color: $white;
-				&:hover {
-					color: $blue;
-				}
-				.fa {
-					display: inline-block;
-					position: relative;
-					top: 5px;
-				}
-				.fa-github, .fa-instagram {
-					margin-right: 29px;
-				}
-			}
-			#hidden-email {
-				display: none;
-			}
-		}
-	}
-	.clear {
-		clear: both;
 	}
 }
 

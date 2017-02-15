@@ -21,43 +21,29 @@ nav {
         text-transform: uppercase;
         font-size: 1em;
         font-weight: 600;
+        color: #ffffff;
         letter-spacing: 2px;
         padding-bottom: 4px; }
         nav ul li a:hover {
-          border-bottom: 2px solid black;
+          border-bottom: 2px solid #ffffff;
           cursor: default; }
 
 /*  HOME  */
 .container {
   width: 100%;
   height: 70vh;
-  background-color: #6BD7C5;
-  padding-top: 80px; }
-  .container #name {
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 2em; }
-    .container #name h1 {
-      margin: 0; }
-  .container #img {
-    height: 290px;
-    width: 420px;
-    border: 5px solid white;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 50px auto; }
-    .container #img img {
-      width: 100%;
-      height: 100%; }
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
   .container #title {
-    text-align: center; }
-    .container #title h2 {
+    text-align: center;
+    color: #ffffff; }
+    .container #title h1 {
       text-transform: uppercase;
-      color: #ffffff;
-      font-size: 1.8em; }
-    .container #title p {
-      color: #ffffff; }
+      font-size: 3.8em; }
+    .container #title h2 {
+      font-size: 1.8em;
+      text-transform: uppercase; }
 
 /* PROJECT */
 #project-container {
@@ -86,37 +72,16 @@ nav {
 footer {
   width: 100%;
   height: 250px;
-  background-color: #244c8c;
+  background-color: #34373d;
   color: #ffffff; }
-  footer .footer-box {
-    text-align: center;
-    height: 70%;
-    width: 33%;
-    display: inline-block;
-    float: left; }
-    footer .footer-box .f-headline {
-      width: 100%;
-      height: 20%; }
-      footer .footer-box .f-headline h2 {
-        text-transform: uppercase;
-        font-size: 1.6em; }
-    footer .footer-box .caption {
-      width: 100%;
-      height: 80%; }
-      footer .footer-box .caption .social-link {
-        color: #ffffff; }
-        footer .footer-box .caption .social-link:hover {
-          color: #6BD7C5; }
-        footer .footer-box .caption .social-link .fa {
-          display: inline-block;
-          position: relative;
-          top: 5px; }
-        footer .footer-box .caption .social-link .fa-github, footer .footer-box .caption .social-link .fa-instagram {
-          margin-right: 29px; }
-      footer .footer-box .caption #hidden-email {
-        display: none; }
-  footer .clear {
-    clear: both; }
+  footer #social {
+    position: relative;
+    top: 45%;
+    text-align: center; }
+    footer #social a {
+      color: #ffffff;
+      margin-right: 15px;
+      font-size: 30px; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 699px) and (min-width: 374px) {
