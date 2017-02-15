@@ -1,6 +1,7 @@
 $blue: #6BD7C5;
 $white: #ffffff;
 $copy: #1a3866;
+$footer: #34373d;
 
 /*  MY PROFILE  */
 
@@ -11,52 +12,67 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-nav {
-	width: 100%;
-	height: 70px;
-	text-align: right;
-	margin-top: 0;
-	overflow: hidden;
-	ul {
-		margin-top: 25px;
-		li {
-			display: inline-block;
-			margin-right: 30px;
-			a {
-				text-decoration: none;
-				text-transform: uppercase;
-				font-size: 1em;
-				font-weight: 600;
-				color: $white;
-				letter-spacing: 2px;
-				padding-bottom: 4px;
-				&:hover {
-					border-bottom: 2px solid $white;
-					cursor: default;
-				}
-			}
-		}
-	}
-}
-
 /*  HOME  */
 
 .container {
 	width: 100%;
-	height: 70vh;
+	height: 80vh;
 	background-image: url(../images/background-comp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	nav {
+		text-align: right;
+		margin-top: 0;
+		overflow: hidden;
+		ul {
+			margin-top: 25px;
+			li {
+				display: inline-block;
+				margin-right: 30px;
+				a {
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 1em;
+					font-weight: 600;
+					color: $white;
+					letter-spacing: 2px;
+					padding-bottom: 4px;
+					&:hover {
+						border-bottom: 2px solid $white;
+						cursor: default;
+					}
+				}
+			}
+		}
+	}
 	#title {
 		text-align: center;
 		color: $white;
+		height: 80%;
+		padding-top: 10%;
 		h1 {
 			text-transform: uppercase;
-			font-size: 3.8em;
+			font-size: 4.8em;
 		}
 		h2 {
 			font-size: 1.8em;
 			text-transform: uppercase;
+		}
+		a {
+			border: 3px solid $white;
+			border-radius: 30px;
+			text-decoration: none;
+			color: $white;
+			padding: 15px;
+			display: inline-block;
+			margin-top: 25px;
+			&:hover {
+				background-color: $white;
+				color: $footer;
+				-webkit-transition: ease-in 0.4s;
+    			-moz-transition: ease-in 0.4s;
+				transition: ease-in 0.4s;
+			}
 		}
 	}
 }
@@ -95,7 +111,7 @@ nav {
 footer {
 	width: 100%;
 	height: 250px;
-	background-color: #34373d;
+	background-color: $footer;
 	color: $white;
 	#social {
 		position: relative;
@@ -111,23 +127,20 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 699px) and (min-width: 374px) {
-    nav {
-		text-align: center;
-		ul {
-			width: 100%;
-			padding: 0 15px;
-		}
-	}
 	.container {
 		padding-top: 20px;
-		#img {
-			width: 80%;
-			height: 40%;
-			margin-top: 0;
-			margin-bottom: 0;
+		nav {
+			text-align: center;
+			ul {
+				width: 100%;
+				padding: 0 15px;
+			}
 		}
-		#title h2 {
-			margin-bottom: 0;
+		#title {
+			padding-top: 0;
+			h2 {
+				margin-bottom: 0;
+			}
 		}
 	}
 	#project-container {
