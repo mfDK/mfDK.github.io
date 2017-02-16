@@ -60,7 +60,7 @@ body {
 
 /* PROJECT */
 #project-container {
-  width: 75%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
@@ -71,9 +71,10 @@ body {
     font-weight: 800; }
   #project-container .projects {
     height: 300px;
-    width: 250px;
+    width: 310px;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
     #project-container .projects .overlay {
       position: absolute;
       height: 100%;
