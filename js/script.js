@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 	$(".overlay").hover(function(){
 		$(this).css({
-			'background-color': 'rgba(212,213,215, 0.4)',
+			'background-color': 'rgba(212,213,215, 0.9)',
 			'transition': '0.7s'
 		})
 		$(this).children().first().css({
