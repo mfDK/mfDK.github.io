@@ -162,6 +162,29 @@ footer {
 	}
 }
 
+@media screen and (orientation: landscape) {
+	.container {
+		padding-top: 20px;
+		nav {
+			text-align: center;
+			ul {
+				width: 100%;
+				padding: 0 15px;
+			}
+		}
+		#title {
+			padding-top: 0;
+			h2 {
+				margin-bottom: 0;
+			}
+		}
+	}
+	#project-container {
+		.projects {
+		}
+	}
+}
+
 // @media screen and (min-width: 700px) and {max-width: 1024px} {
 //
 // }
