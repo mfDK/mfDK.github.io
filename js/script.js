@@ -34,7 +34,7 @@ $(document).ready(function(){
 			'background-color': 'rgba(212,213,215, 0)'
 		})
 		$(this).children().first().css({
-			'color': 'rgba(212,213,215, 0)',
+			'color': 'rgba(255,255,255, 0)',
 			'transition': '0.7s'
 		})
 	})

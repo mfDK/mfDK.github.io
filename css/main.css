@@ -71,7 +71,7 @@ body {
     font-weight: 800; }
   #project-container .projects {
     height: 300px;
-    width: 300px;
+    width: 250px;
     display: inline-block;
     position: relative; }
     #project-container .projects .overlay {
@@ -83,7 +83,7 @@ body {
         position: relative;
         top: 40%;
         font-size: 3em;
-        color: rgba(212, 213, 215, 0); }
+        color: transparent; }
     #project-container .projects .project-thumb {
       height: 100%;
       width: 100%; }
@@ -108,7 +108,7 @@ footer {
       font-size: 30px; }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 699px) and (min-width: 374px) and (orientation: portrait) {
+@media screen and (max-width: 699px) and (min-width: 374px) {
   .container {
     height: 90vh; }
     .container nav {
@@ -120,7 +120,7 @@ footer {
       padding-top: 0; }
       .container #title h2 {
         margin-bottom: 0; } }
-@media (orientation: landscape) {
+@media screen and (max-width: 699px) and (orientation: landscape) {
   .container {
     height: 500px; }
     .container nav {
