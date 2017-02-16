@@ -20,12 +20,25 @@ $(document).ready(function(){
 		return false;
 	});
 
-	var projectThumb = document.getElementsByClassName("project-thumb");
-	for (var i = 0; i < projectThumb.length; i++) {
-		projectThumb[i].addEventListener('mouseover', function(e) {
-			overLay(e)
+	$(".overlay").hover(function(){
+		$(this).css({
+			'background-color': 'rgba(212,213,215, 0.4)',
+			'transition': '0.7s'
 		})
-	}
+		$(this).children().first().css({
+			'color': 'rgba(255,255,255, 1)',
+			'transition': '0.7s'
+		})
+	},function(){
+		$(this).css({
+			'background-color': 'rgba(212,213,215, 0)'
+		})
+		$(this).children().first().css({
+			'color': 'rgba(212,213,215, 0)',
+			'transition': '0.7s'
+		})
+	})
+
 	function overLay(event) {
 		console.log(event.target.id)
 	}

@@ -94,6 +94,19 @@ body {
 		height: 300px;
 		width: 300px;
 		display: inline-block;
+		position: relative;
+		.overlay {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(212,213,215, 0);
+			i {
+				position: relative;
+				top: 40%;
+				font-size: 3em;
+				color: rgba(212,213,215, 0);
+			}
+		}
 		.project-thumb {
 			height: 100%;
 			width: 100%;

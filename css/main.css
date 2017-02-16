@@ -72,7 +72,18 @@ body {
   #project-container .projects {
     height: 300px;
     width: 300px;
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
+    #project-container .projects .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(212, 213, 215, 0); }
+      #project-container .projects .overlay i {
+        position: relative;
+        top: 40%;
+        font-size: 3em;
+        color: rgba(212, 213, 215, 0); }
     #project-container .projects .project-thumb {
       height: 100%;
       width: 100%; }
