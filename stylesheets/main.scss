@@ -139,9 +139,8 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 699px) and (min-width: 374px) {
+@media screen and (max-width: 699px) and (min-width: 374px) and (orientation: portrait) {
 	.container {
-		padding-top: 20px;
 		nav {
 			text-align: center;
 			ul {
@@ -162,9 +161,9 @@ footer {
 	}
 }
 
-@media screen and (orientation: landscape) {
+@media (orientation: landscape) {
 	.container {
-		padding-top: 20px;
+		height: 500px;
 		nav {
 			text-align: center;
 			ul {
