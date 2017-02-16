@@ -54,9 +54,9 @@ body {
       .container #title a:hover {
         background-color: #ffffff;
         color: #34373d;
-        -webkit-transition: ease-in 0.4s;
-        -moz-transition: ease-in 0.4s;
-        transition: ease-in 0.4s; }
+        -webkit-transition: ease-in 0.3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s; }
 
 /* PROJECT */
 #project-container {
@@ -86,8 +86,9 @@ body {
         font-size: 3em;
         color: transparent; }
     #project-container .projects .project-thumb {
-      height: 100%;
-      width: 100%; }
+      height: 70%;
+      width: 70%;
+      margin-top: 30px; }
 
 .logo {
   width: 100%;
