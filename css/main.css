@@ -109,15 +109,17 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 699px) and (min-width: 374px) and (orientation: portrait) {
-  .container nav {
-    text-align: center; }
-    .container nav ul {
-      width: 100%;
-      padding: 0 15px; }
-  .container #title {
-    padding-top: 0; }
-    .container #title h2 {
-      margin-bottom: 0; } }
+  .container {
+    height: 90vh; }
+    .container nav {
+      text-align: center; }
+      .container nav ul {
+        width: 100%;
+        padding: 0 15px; }
+    .container #title {
+      padding-top: 0; }
+      .container #title h2 {
+        margin-bottom: 0; } }
 @media (orientation: landscape) {
   .container {
     height: 500px; }

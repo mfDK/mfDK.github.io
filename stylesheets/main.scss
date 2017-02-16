@@ -141,6 +141,7 @@ footer {
 /* MEDIA QUERIES */
 @media screen and (max-width: 699px) and (min-width: 374px) and (orientation: portrait) {
 	.container {
+		height: 90vh;
 		nav {
 			text-align: center;
 			ul {
